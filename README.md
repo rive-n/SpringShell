@@ -2,10 +2,10 @@
 
 ## Deploy
 
-`mvn package` -> Will create .war file
-`docker build . -t spring` -> Will create docker image
-`docker run --rm -d -p 8080:8080 --name spring spring:latest` -> Will create container
-`docker build . -t spring && docker run --rm -d -p 8080:8080 --name spring spring:latest && sleep 5 && python3 poc.py` -> Will create container and execute PoC
+`mvn package` -> Will create .war file <br>
+`docker build . -t spring` -> Will create docker image <br>
+`docker run --rm -d -p 8080:8080 --name spring spring:latest` -> Will create container <br>
+`docker build . -t spring && docker run --rm -d -p 8080:8080 --name spring spring:latest && sleep 5 && python3 poc.py` -> Will create container and execute PoC <br>
 
 ## Results:
 `docker logs -f <container_id>` or `docker logs -f (docker ps -a -q)`
